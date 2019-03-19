@@ -1,15 +1,26 @@
 package com.BookManageSystem.util;
 
 import java.sql.*;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class DBUtil {
     //	static String ip="172.0.0.1";
 //	static int port = 3036;
-    static String ip = "localhost";
-    static String database = "yootk";//数据库名称
-    static String endoing = "utf-8";
-    static String loginName = "root";
-    static String password = "root";
+    static String ip;
+    static String database;//数据库名称
+    static String endoing;
+    static String loginName;
+    static String password;
+
+    static {
+        ResourceBundle rb = ResourceBundle.getBundle("database", Locale.getDefault());
+        loginName = rb.getString("username");
+        password = rb.getString("password");
+        ip = rb.getString("host");
+        database = rb.getString("database");
+        endoing = rb.getString("endoing");
+    }
     static {
         try {
             Class.forName("com.mysql.jdbc.Driver");
