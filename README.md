@@ -1,6 +1,6 @@
 # BookManageSystem
 这个是我大一写的实训作业，用的java 的gui组件，数据库用的mysql，写的一个图书管理系统
-![bg.jpg](https://github.com/bighamapi/BookManageSystem/blob/master/bg.jpg)
+![zjm.jpg](https://github.com/bighamapi/BookManageSystem/blob/master/G%25U6ZRK3J%5D%5DEWEEUW3_4QYO.png)
 安装方法：
 运行环境为java 8以上
 
